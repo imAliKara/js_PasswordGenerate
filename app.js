@@ -27,7 +27,7 @@
     passwordBox.select();
     passwordBox.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(passwordBox.value);
-    if (passwordBox.value!=null) {
+    if (passwordBox.value=="") {
         document.getElementById("successful").style.color = "red";
         document.getElementById("successful").innerHTML = "Not Copied! Please generate a password!";
     } else {
